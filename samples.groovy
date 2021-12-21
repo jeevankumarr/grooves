@@ -27,10 +27,13 @@ def getCommonElements(firstList, secondList) {
     }
     return opt
 }
+
+
 def main() {
     hello_world()
     createEscapedJson()
     println(getCommonElements(["dog", "cat", "mouse", "racoon"], ["elephant", "mouse", "cat"]))
+    print(["dog", "cat", "mouse", "racoon"].intersect(["elephant", "mouse", "cat"]))
 }
 
 main()
