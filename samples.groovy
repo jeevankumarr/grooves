@@ -10,4 +10,9 @@ def createEscapedJson() {
     def jsonObj = JsonOutput.toJson([name: "Jeevan", habits: habits.split(" ")])
     println(JsonOutput.toJson(jsonObj))
 }
-hello_world()
+
+def main() {
+    hello_world()
+    createEscapedJson()
+}
+main()
