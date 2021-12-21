@@ -10,6 +10,7 @@ def createEscapedJson() {
 
     // creates a json object with key value pair combinations, and splits 'habits'
     def jsonObj = JsonOutput.toJson([name: "Jeevan", habits: habits.split(" ")])
+    
     // jsonObj is escaped via creating another json object - stringify
     println(JsonOutput.toJson(jsonObj))
 }
